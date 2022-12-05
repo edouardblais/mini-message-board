@@ -6,6 +6,8 @@ block content
     p Welcome to #{title}
   
   main 
+    a(href='/new') Add a new message
+
     each message in messages
       h2= message.user
       h3= message.text
