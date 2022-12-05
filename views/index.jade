@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  header
+    h1= title
+    p Welcome to #{title}
+  
+  main 
+    each message in messages
+      h2= message.user
+      h3= message.text
+      h4= message.added

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  header
+    h1 New message
+  
+  main 
+    form(action='/new', method='POST')
+        p 
+            | name: 
+            input(type='text', name='name', value='')
+            | message: 
+            input(type='text', name='message', value='')
+        input(type='submit', value='Submit')
